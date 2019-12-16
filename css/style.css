@@ -11,7 +11,8 @@
 
 
 body{
-    font-family:"AxisStd-Regular","Axis-Light",sans-serif; width:1440px; margin:0 auto;
+    font-family:"AxisStd-Regular","Axis-Light",
+    "ヒラギノ角ゴ Pro W3",sans-serif; width:1440px; margin:0 auto;
 }
 
 .header-top{
@@ -27,13 +28,13 @@ body{
     text-decoration:underline; color:#676767;
 }
 .header-top-list:first-child{
-    font-weight:600; margin:0 0 0 150px;
+    margin:0 0 0 150px;
 }
 .header-top-list:nth-child(2){
     margin-left:60px;
 }
 .header-top-list:not( :first-child ){
-    color:#676767; border-right:1px solid #676767; font-weight:600;
+    color:#676767; border-right:1px solid #676767;
 }
 .header-top-list:last-child{
     background-color:#d9d9d9; height:35px; color:#000066;
@@ -68,15 +69,15 @@ body{
     display:flex;
 }
 .header-navi-list{
-    display:inline-block; text-align:center; border-right:1px solid #dcdddd; height:30px; 
-    font-weight:600; margin-top:5px;
+    display:inline-block; text-align:center; border-right:1px solid #dcdddd; height:30px;
+    font-weight:normal;
 }
 .header-navi-list:not( :first-child ){
-    width:140px; height:30px; padding:0 10px;
+    width:140px; height:30px; padding:0px;
 }
 .header-navi-list a{
-    text-decoration:none; color:#272727;
-    display: block; width:140px; height:30px;
+    text-decoration:none; color:inherit;
+    display: block; width:140px; height:35px;
 }
 .header-navi-list a:hover{
     color:#1f286f;
@@ -89,7 +90,8 @@ body{
     color:#1f286f;
 }
 .header-navi-list span{
-    font-size:12px; vertical-align:70%; color:#9FA5AB;
+    font-size:12px; color:grey;
+    display:block;
 }
 .header-navi-list span:hover{
     color:#1f286f;
@@ -872,7 +874,7 @@ body{
 .bottom-link-right li{
     float: left; list-style: none; font-size:11px;
     width:180px; height:45px; text-align: center;
-    padding-bottom:10px; position: relative; left:330px;
+    padding-bottom:10px; position: relative; left:230px;
     border-right:1px solid #ddd;
 }
 .bottom-link-right li:last-child{
@@ -888,4 +890,21 @@ body{
 }
 .bottom-gt{
     position: relative; left:70px; bottom:23px;
+}
+
+.copyright{
+    width:1440px; height:50px; background-color:black;
+    color:grey; display:flex; margin-bottom:20px;
+}
+.copyright-left{
+    position: relative; left:170px; top:15px;
+}
+.copyright-left a{
+    text-decoration:none; color:inherit;
+}
+.copyright-left:hover{
+    text-decoration:underline;
+}
+.copyright-right{
+    position: relative; left:820px; top:15px;
 }
