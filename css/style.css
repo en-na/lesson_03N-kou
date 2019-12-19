@@ -130,7 +130,9 @@ body{
 .aboutschool{
     margin:0; padding:0; position: relative;
     background-image:url(../images/mainimage.jpg);
-    background-size:cover; height:530px;
+    background-size:cover; 
+    background-repeat:no-repeat;
+    height:530px;
     position:relative; bottom:20px;
 }
 /* .aboutschool-img{ 
