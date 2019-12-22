@@ -11,10 +11,12 @@
 
 body{
     font-family:"AxisStd-Regular","Axis-Light",
-    "ヒラギノ角ゴ Pro W3",sans-serif; width:1440px; margin:0 auto;
+    "ヒラギノ角ゴ Pro W3",sans-serif; max-width:1440px; margin:0 auto;
     overflow-x: hidden;
 }
-
+main{
+    width:100%;
+}
 .header-top{
     margin:0; background-color:#f7f7f7; 
 }
@@ -690,27 +692,28 @@ body{
     font-size:20px; position: relative; top:20px; left:500px;
 }
 .book-icon{
-    background-color: white; width:260px; height:50px; font-size:17px;
+    width:260px; height:50px; font-size:17px;
     text-align: center; position: relative; top:100px; left:30px;
 }
 .book-icon-img{
     width:30px; height:30px; position: relative; top:10px; right:20px;
 }
 .book-icon a{
-    display:block; width:260px; height:55px; text-decoration:none; color:black;
+    display:block; width:260px; height:50px; text-decoration:none; color:black; background-color: white;
 }
 .book-icon a:hover{
     opacity:0.6;
 }
 .balloon-icon{
-    background-color:white; width:260px; height:50px; font-size:17px;
+     width:260px; height:50px; font-size:17px;
     text-align: center; position: relative; top:170px; right:230px;
 }
 .balloon-icon-img{
     width:30px; height:30px; position: relative; top:10px; right:20px;
 }
 .balloon-icon a{
-    display:block; width:260px; height:55px; text-decoration:none; color:black;
+    display:block; width:260px; height:50px; text-decoration:none; color:black;
+    background-color:white;
 }
 .balloon-icon a:hover{
     opacity:0.6;
