@@ -11,12 +11,10 @@
 
 body{
     font-family:"AxisStd-Regular","Axis-Light",
-    "ヒラギノ角ゴ Pro W3",sans-serif; max-width:1440px; margin:0 auto;
-    overflow-x: hidden;
+    "ヒラギノ角ゴ Pro W3",sans-serif;  margin:0 auto;
+    overflow-x: hidden; text-align:center;
 }
-main{
-    width:100%;
-}
+
 .header-top{
     margin:0; background-color:#f7f7f7; 
 }
@@ -30,10 +28,10 @@ main{
     text-decoration:underline; color:#676767;
 }
 .header-top-list:first-child{
-    margin:0 0 0 150px;
+    margin:0 0 0 0px;
 }
 .header-top-list:nth-child(2){
-    margin-left:60px;
+    margin-left:70px;
 }
 .header-top-list:not( :first-child ){
     color:#676767; border-right:1px solid #676767;
@@ -52,27 +50,27 @@ main{
 }
 
 .header-logo{
-    display:flex;
+    display:flex; justify-content:center;
 }
 .main-logo img{
-    height:45px; width:210px; margin-left:200px;
+    height:45px; width:210px; position: relative; right:250px;
 }
 .tel-logo{
-    position:relative; top:25px; left:465px;
+    position:relative; top:25px; left:240px;
 }
 .tel-undertext{
-    font-size:13px; color:#8d959c; margin-left:40px;
+    font-size:13px; color:#8d959c;
 }
 .header-icon img{
-    width:30px; height:30px; padding:0 2px; position:relative; top:30px; left:500px;
+    width:30px; height:30px; padding:0 2px; position:relative; top:30px; left:280px;
 }
 
 .header-navi{
-    display:flex;
+    display:flex; justify-content:center;
 }
 .header-navi-list{
-    display:inline-block; text-align:center; border-right:1px solid #dcdddd; height:30px;
-    font-weight:normal;
+    display:inline-block; border-right:1px solid #dcdddd; height:30px;
+    font-weight:normal; 
 }
 .header-navi-list:not( :first-child ){
     width:140px; height:30px; padding:0px;
@@ -85,11 +83,14 @@ main{
     color:#1f286f;
 }
 .header-navi-list:first-child{
-    border-left:1px solid #dcdddd; color:#1f286f; margin-left:160px;
+    border-left:1px solid #dcdddd; color:#1f286f; margin-left:px;
     padding:0 30px;
 }
 .header-navi-list:first-child span{
     color:#1f286f;
+}
+.header-navi-list:last-child{
+    margin-right:50px;
 }
 .header-navi-list span{
     font-size:12px; color:grey;
@@ -107,14 +108,14 @@ main{
 }
 
 .triangle img{
-    width:15px; height:15px; position:relative; left:270px; bottom:13px;
+    width:15px; height:15px; position:relative; right:430px; bottom:13px;
 }
 
 .main-navi{
     width:100%; height:95px; background-color:#181836; position:relative; bottom:20px;
 }
 .main-navi-ul{
-    margin-left:170px; margin-top:0; margin-bottom:0;
+    margin-top:0; margin-bottom:0;
 }
 .main-navi-list{
     display:inline-block; padding:15px 20px 10px 10px; font-size:15px;
@@ -130,32 +131,36 @@ main{
 }
 
 .aboutschool{
-    margin:0; padding:0; position: relative;
+    margin:0; padding:0;
     background-image:url(../images/mainimage.jpg);
     background-size:cover; 
     background-repeat:no-repeat;
     height:530px;
     position:relative; bottom:20px;
+    object-fit: cover;
 }
-/* .aboutschool-img{ 
+
+/* .aboutschool-img{
     width:100%; height:530px; object-fit:cover;  
 }*/
+
 .aboutschool span{
-    position: absolute; z-index:1; left:500px; top:60px;
-    color:#ffffff; font-weight:400; font-size:52px;
+    position: relative; top:80px; left:150px;
+    color:#ffffff; font-size:50px; letter-spacing:0.3em;
 }
 .white-line{
-    position: absolute; z-index:1; right:630px; top:130px;
+    position:relative; top:110px; right:140px;
 }
 .aboutschool-text{
-    position: absolute; z-index:1; right:675px; top:155px; width:100px; height:15px;
+    position:relative; top:150px;  right:300px;
+    width:100px; height:15px;
 }
 
 .breadcrumb-list{
      border-bottom:1px solid #E1E1E1; padding-bottom:30px; margin-top:0;
 }
 .breadcrumb li{
-    display:inline-block; font-size:14px; font-weight:400; margin:0 0 0 150px;
+    display:inline-block; font-size:14px; margin-right:650px;
 }
 .breadcrumb a{
     color:#36538d; text-decoration:none;
@@ -165,38 +170,60 @@ main{
 }
 
 .top-text-1{
-    font-weight:400; font-size:33px; margin-top:80px; text-align:center;
+    font-size:33px; margin-top:80px; text-align:center;
 }
 .top-text-2{
-    font-weight:600; font-size:22px; margin-top:80px; line-height:1.8; text-align:center;
+    font-size:22px; margin-top:80px; line-height:1.8; text-align:center;
 }
 .top-text-3{
-    line-height:1.8; position:relative; left:400px; width:800px;
+    line-height:1.8;
 }
 
 .educational-policy{
-    margin-left:200px; position: relative; height:450px;
+    position: relative; height:450px;
 }
 .educational-policy p{
-    font-size:26px; font-weight:700; position: relative; top:40px;
+    font-size:26px; position: relative; right:465px; top:40px;
 }
 .educational-policy-content ul{
     list-style:none; padding-left:0;
+    position: relative; left:200px;
 }
 .educational-policy-content li{
     font-size:19px; padding:30px 15px 30px 0;
 }
+.policy-1{
+    position: relative; right:510px;
+}
+.policy-2{
+    position: relative; right:557px;
+}
+.policy-3{
+    position: relative; right:567px;
+}
 .educational-policy-content span{
-    font-weight:700; font-size:26px; padding:10px 15px 10px 0;
+    font-size:26px; padding:10px 15px 10px 0;
     border-right:1px solid black;
 }
 .educational-policy-content img{
-    position: absolute; z-index:1; left:700px; top:120px; width:330px; height:285px; object-fit: cover;
+    position: relative; bottom:260px; left:350px; width:330px; height:285px; object-fit: cover;
 }
 
+.test-box{
+    display:flex; justify-content: center;
+}
 .N-standards{
-    display:flex; width:580px; padding:30px; background-color:#f7f7f7; margin:50px 0 0 400px;
-    border:1px solid #ddd;
+    
+    width:600px; height:280px;
+    padding:30px; background-color:#f7f7f7; border:1px solid #ddd;
+    margin-top:30px;
+}
+.N-standards-img{
+    position: relative;right:210px;
+}
+.N-standards-text{
+    text-align: start;
+    position: relative; left:170px; bottom:280px;
 }
 .N-standards-text h1{
     font-size:22px; font-weight:400; position: relative; left:20px; height:30px;
@@ -222,13 +249,17 @@ main{
 }
 
 .N-kou-goodness{
-    width:1100px; position: relative; left:200px; top:80px;
+ position: relative; left:px; top:80px;
 }
 .N-kou-goodness h1{
-    font-size:26px; font-weight:700; position: relative; top:30px;
+    font-size:26px; position: relative; top:30px; right:455px;
 }
 .N-kou-goodness-content{
-    display:flex; margin-top:60px;
+    display:flex; justify-content: center; margin-top:60px;
+    position: relative; right:40px;
+}
+.N-kou-goodness-text{
+    text-align: start;
 }
 .N-kou-goodness-text h2{
     line-height:1.8; border-bottom:1px solid #1c1c1c; padding-bottom:20px;
@@ -254,13 +285,11 @@ main{
     padding-bottom:50px; margin-top:0; line-height:1.8; font-size:17px;
 }
 .article-1th-content{
-    display:flex;
-}
-.left-img{
-    position: relative; left:150px;
+    display:flex; justify-content: center;
 }
 .article-1th-content-text{
-    position: relative; left:200px; top:5px;
+    position: relative; left:30px; top:5px;
+    text-align:start;
 }
 .article-1th-content a{
     text-decoration:none; color:black;
@@ -287,13 +316,15 @@ main{
 }
 
 .article-2th-content{
-    display:flex; margin-top:100px; padding-bottom:100px;
+    display:flex; justify-content: center;
+    margin-top:100px; padding-bottom:100px;
 }
 .right-img{
-    position: relative; left:240px;
+    position: relative; left:px;
 }
 .article-2th-content-text{
-    position: relative; left:150px; top:5px;
+    position: relative; right:30px; top:5px;
+    text-align: start;
 }
 .article-2th-content a{
     text-decoration:none; color:black;
@@ -318,10 +349,11 @@ main{
     padding-bottom:50px; margin-top:0; line-height:1.8; font-size:17px;
 }
 .article-3th-content{
-    display:flex;
+    display:flex; justify-content: center;
 }
 .article-3th-content-text{
-    position: relative; left:200px; top:5px;
+    position: relative; left:px; top:5px;
+    text-align: start;
 }
 .article-3th-content a{
     text-decoration:none; color:black;
@@ -339,15 +371,20 @@ main{
 .article-3th-content-text p{
     line-height:1.8;
 }
+.left-img{
+    position: relative; right:40px;
+}
 
 .article-4th-content{
-    display:flex; margin-top:100px; padding-bottom:100px;
+    display:flex; justify-content: center;
+    margin-top:100px; padding-bottom:100px;
 }
 .right-img2{
-    position: relative; left:220px;
+    position: relative; left:px;
 }
 .article-4th-content-text{
-    position: relative; left:150px; top:5px;
+    position: relative; right:30px; top:5px;
+    text-align: start;
 }
 .article-4th-content a{
     text-decoration:none; color:black;
@@ -363,10 +400,11 @@ main{
 }
 
 .article-5th-content{
-    display:flex;
+    display:flex; justify-content: center;
 }
 .article-5th-content-text{
-    position: relative; left:200px; top:5px;
+    position: relative; left:px; top:5px;
+    text-align: start;
 }
 .article-5th-content a{
     text-decoration:none; color:black;
@@ -382,10 +420,12 @@ main{
 }
 
 .article-6th-content{
-    display:flex; margin-top:100px; padding-bottom:100px;
+    display:flex; justify-content: center;
+    margin-top:100px; padding-bottom:100px;
 }
 .article-6th-content-text{
-    position: relative; left:150px; top:5px;
+    position: relative; right:30px; top:5px;
+    text-align: start;
 }
 .article-6th-content a{
     text-decoration:none; color:black;
@@ -401,10 +441,11 @@ main{
 }
 
 .article-7th-content{
-    display:flex;
+    display:flex; justify-content: center;
 }
 .article-7th-content-text{
-    position: relative; left:200px; top:5px;
+    position: relative; left:px; top:5px;
+    text-align: start;
 }
 .article-7th-content a{
     text-decoration:none; color:black;
@@ -420,10 +461,12 @@ main{
 }
 
 .article-8th-content{
-    display:flex; margin-top:100px; padding-bottom:100px;
+    display:flex; justify-content: center;
+    margin-top:100px; padding-bottom:100px;
 }
 .article-8th-content-text{
-    position: relative; left:150px; top:5px;
+    position: relative; right:30px; top:5px;
+    text-align: start;
 }
 .article-8th-content a{
     text-decoration:none; color:black;
@@ -439,10 +482,11 @@ main{
 }
 
 .article-9th-content{
-    display:flex;
+    display:flex; justify-content: center;
 }
 .article-9th-content-text{
-    position: relative; left:200px; top:5px;
+    position: relative; left:px; top:5px;
+    text-align: start;
 }
 .article-9th-content a{
     text-decoration:none; color:black;
@@ -468,10 +512,12 @@ main{
     position:relative; bottom:35px;
 }
 .article-10th-content{
-    display:flex; margin-top:50px; padding-bottom:100px;
+    display:flex; justify-content: center;
+    margin-top:50px; padding-bottom:100px;
 }
 .article-10th-content-text{
-    position: relative; left:150px; top:5px;
+    position: relative; left:px; top:5px;
+    text-align:start;
 }
 .article-10th-content a{
     text-decoration:none; color:black;
@@ -485,6 +531,9 @@ main{
 .article-10th-content-text p{
     line-height:1.8;
 }
+.right-img3{
+    position: relative; left:30px;
+}
 
 .article-11th-header{
     text-align:center; padding-top:70px;
@@ -493,10 +542,12 @@ main{
     position:relative; bottom:35px;
 }
 .article-11th-content{
-    display:flex; margin-top:50px;
+    display:flex; justify-content: center;
+    margin-top:50px;
 }
 .article-11th-content-text{
-    position: relative; left:200px; top:5px;
+    position: relative; text-align: start;
+    left:px; top:5px;
 }
 .article-11th-content a{
     text-decoration:none; color:black;
@@ -522,10 +573,12 @@ main{
     position:relative; bottom:35px;
 }
 .article-12th-content{
-    display:flex; margin-top:50px; padding-bottom:100px;
+    display:flex; justify-content: center;
+    margin-top:50px; padding-bottom:100px;
 }
 .article-12th-content-text{
-    position: relative; left:150px; top:5px;
+    position: relative; text-align: start;
+    left:px; top:5px;
 }
 .article-12th-content a{
     text-decoration:none; color:black;
@@ -547,10 +600,12 @@ main{
     position:relative; bottom:35px;
 }
 .article-13th-content{
-    display:flex; margin-top:50px;
+    display:flex; justify-content: center;
+    margin-top:50px;
 }
 .article-13th-content-text{
-    position: relative; left:200px; top:5px;
+    text-align: start;
+    position: relative; left:px; top:5px;
 }
 .article-13th-content a{
     text-decoration:none; color:black;
@@ -576,10 +631,12 @@ main{
     position:relative; bottom:35px;
 }
 .article-14th-content{
-    display:flex; margin-top:50px; padding-bottom:100px;
+    display:flex; justify-content: center;
+     margin-top:50px; padding-bottom:100px;
 }
 .article-14th-content-text{
-    position: relative; left:150px; top:5px;
+    text-align: start;
+    position: relative; left:px; top:5px;
 }
 .article-14th-content a{
     text-decoration:none; color:black;
@@ -595,10 +652,12 @@ main{
 }
 
 .article-15th-content{
-    display:flex; margin-top:50px;
+    display:flex; justify-content: center;
+    margin-top:50px;
 }
 .article-15th-content-text{
-    position: relative; left:200px; top:5px;
+    text-align: start;
+    position: relative; left:30px; top:5px;
 }
 .article-15th-content a{
     text-decoration:none; color:black;
@@ -620,10 +679,12 @@ main{
     position:relative; bottom:35px;
 }
 .article-16th-content{
-    display:flex; margin-top:50px; padding-bottom:100px;
+    display:flex; justify-content: center;
+     margin-top:50px; padding-bottom:100px;
 }
 .article-16th-content-text{
-    position: relative; left:150px; top:5px;
+    text-align: start;
+    position: relative; left:px; top:5px;
 }
 .article-16th-content a{
     text-decoration:none; color:black;
@@ -666,16 +727,18 @@ main{
 }
 .boxtext-top{
     font-size:26px; padding-left:20px; padding-top:20px;
+    text-align: start;
 }
 .boxtext-down{
     font-size:14px; padding-left:20px;
+    text-align: start;
 }
 .right-icon3{
-    position: relative; left:450px; bottom:50px;
+    position: relative; left:210px; bottom:50px;
     width:6px; height:8px;
 }
 .right-icon4{
-    position: relative; left:450px; bottom:80px;
+    position: relative; left:210px; bottom:80px;
     width:6px; height:8px;
 }
 
@@ -687,6 +750,7 @@ main{
 .nkou-detail{
     color:white; background:url(..//images/back-nkou.png) ;
     height:250px; margin-top:200px; display:flex;
+    justify-content: center;
 }
 .nkou-detail p{
     font-size:20px; position: relative; top:20px; left:500px;
@@ -748,7 +812,8 @@ main{
 }
 
 .footer-linkbox{
-    display:flex; margin-top:50px;
+    display:flex; justify-content: center;
+    margin-top:50px;
 }
 .footer-linkbox img{
     width:135px; height:40px; padding:20px 0 5px;
@@ -758,7 +823,7 @@ main{
 }
 .linkbox-left{
     width:410px; height:100px; text-align: center; background:url(..//images/decoration.png);
-    padding:10px; position: relative; left:250px;
+    padding:10px; position: relative; right:50px;
 }
 .linkbox-left a{
     display:block; width:410px; height:100px; background-color: white;
@@ -769,7 +834,7 @@ main{
 }
 .linkbox-right{
     width:410px; height:100px; text-align: center; background:url(..//images/decoration.png);
-    padding:10px; position: relative; left:320px;
+    padding:10px; position: relative; left:50px;
 }
 .linkbox-right a{
     display:block; width:410px; height:100px; background-color: white;
@@ -780,15 +845,16 @@ main{
 }
 
 footer{
-    background-color:#f7f7f7; margin-top:100px; width:1440px;
+    background-color:#f7f7f7; margin-top:100px;
 }
 .footer-navi{
-    padding-top:50px; margin-left:160px;
+    padding-top:50px; position: relative; right:180px;
+    display: flex; justify-content: center;
 }
 .footer-navi li{
-    list-style:none; float:left; 
+    list-style:none;
      border-left:solid 1px #cccccc; padding: 0 15px; box-sizing:border-box;
-     text-align: center ; font-size:16px; font-weight:700;
+     text-align: center ; font-size:16px;
 }
 .footer-navi li:first-child{
     border-left:none;
@@ -800,15 +866,15 @@ footer{
     text-decoration:underline;
 }
 .to-top{
-    position: relative; left:150px; bottom:30px;
+    position: relative; left:450px; bottom:50px;
 }
 .to-top a:hover{
     opacity:0.6;
 }
 
 .footer-link-box{
-    display:flex; flex-wrap:wrap; align-content:flex-start;
-    margin-left:200px;
+    display:flex; justify-content:center;
+    flex-wrap:wrap; align-content:flex-start;
 }
 .footer-link-list{
     width:220px;
@@ -818,6 +884,7 @@ footer{
 }
 .footer-link-list li{
     padding:8px 5px; font-size:14px; list-style:none;
+    text-align: start;
 }
 .footer-link-list li:first-child{
     font-size:17px; font-weight:700;
@@ -838,9 +905,13 @@ footer{
     border-bottom:1px solid #c9c9c9; margin-bottom:20px;
 }
 
+.bottom-link-box{
+    display:flex; justify-content: center;
+}
 .bottom-link{
-    display:flex; width:1100px; border-top:1px solid #c9c9c9;
-    margin:50px 0 0 170px;  padding-bottom:30px;
+    
+    width:1100px; border-top:1px solid #c9c9c9;
+    margin:50px 0 0 0px;
 }
 .bottom-twitter-icon{
     width:25px; height:25px; position: relative; top:13px; left:5px;
@@ -852,7 +923,7 @@ footer{
     width:25px; height:25px; position: relative; top:13px; left:8px;
 }
 .bottom-link-left{
-    margin-top:30px;
+    margin-top:30px; position: relative; right:420px;
 }
 .bottom-link-left a{
     text-decoration:none; color:black;
@@ -863,8 +934,8 @@ footer{
 .bottom-link-right li{
     float: left; list-style: none; font-size:11px;
     width:140px; height:45px;
-    padding-bottom:10px; position: relative; left:330px;
-    border-right:1px solid #ddd;
+    padding-bottom:10px; position: relative; left:600px; bottom:40px;
+    border-right:1px solid #ddd; text-align: start;
 }
 .bottom-link-right li:last-child{
     border-right:none;
@@ -891,11 +962,12 @@ footer{
 }
 
 .copyright{
-    width:1440px; height:50px; background-color:black;
-    color:grey; display:flex; margin-bottom:20px;
+    width:100%; height:50px; background-color:black;
+    color:grey; display:flex; justify-content: center;
+    margin-bottom:20px;
 }
 .copyright-left{
-    position: relative; left:170px; top:15px;
+    position: relative; right:335px; top:15px;
 }
 .copyright-left a{
     text-decoration:none; color:inherit;
@@ -904,5 +976,5 @@ footer{
     text-decoration:underline;
 }
 .copyright-right{
-    position: relative; left:820px; top:15px;
+    position: relative; left:320px; top:15px;
 }
